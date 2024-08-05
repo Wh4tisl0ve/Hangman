@@ -6,8 +6,11 @@
   
 Проект создан в рамках **Python Roadmap Сергея Жукова** -> [ссылка](https://zhukovsd.github.io/python-backend-learning-course/)
   
-![logo](./docs/logo_game.jpg)
 
+<p align="center">
+  <img src="./docs/logo_game.png" alt="Sublime's custom image"/>
+</p>
+  
 ## Диаграмма классов
 
 ![Diagram](./docs/Diagram.jpg)
