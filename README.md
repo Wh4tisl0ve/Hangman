@@ -5,6 +5,9 @@
 Если туловище в виселице нарисовано полностью, то игрок проиграл. Если игроку удаётся угадать слово, он выигрывает.  
   
 Проект создан в рамках **Python Roadmap Сергея Жукова** -> [ссылка](https://zhukovsd.github.io/python-backend-learning-course/)
+  
+![logo](./docs/logo_game.jpg)
+
 ## Диаграмма классов
 
 ![Diagram](./docs/Diagram.jpg)
