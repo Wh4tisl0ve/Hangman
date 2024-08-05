@@ -8,7 +8,7 @@
   
 
 <p align="center">
-  <img src="./docs/logo_game.png" alt="Sublime's custom image"/>
+  <img src="./docs/logo_game.png" width="250" height="250" alt="logo"/>
 </p>
   
 ## Диаграмма классов
