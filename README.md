@@ -10,7 +10,18 @@
 <p align="center">
   <img src="./docs/logo_game.png" width="250" height="250" alt="logo"/>
 </p>
-  
+
+
+## Структура проекта
+
+* [main.py](main.py) Файл, позволяющий запустить игру
+* [src/data](src/data) Директория, содержащая в себе текстовый словарь слов существительных, используемых в игровом процессе
+* [src/word_repository.py](src/word_repository.py) Класс, позволяющий генерировать случайное слово на основе списка слов
+* [src/view.py](src/view.py) Содержит в себе консольное представление игры
+* [src/read_file.py](src/read_file.py) Класс, позволяющий выполнить чтение файла
+* [src/hangman_stages.py](src/hangman_stages.py) Файл, позволяющий получить состояния виселицы
+* [src/game_launcher.py](src/game_launcher.py) Содержит класс, позволяющий организовать игровой процесс
+* [src/game.py](src/game.py) Класс, содержащий логику игры
 ## Диаграмма классов
 
 ![Diagram](./docs/Diagram.jpg)
@@ -31,17 +42,6 @@
 
    ![Incorrect](./docs/incrorrect_letter.jpg)
 4. У вас есть 6 попыток, для того чтобы угадать слово.
-
-## Структура проекта
-
-* [main.py](main.py) Файл, позволяющий запустить игру
-* [src/data](src/data) Директория, содержащая в себе текстовый словарь слов существительных, используемых в игровом процессе
-* [src/word_repository.py](src/word_repository.py) Класс, позволяющий генерировать случайное слово на основе списка слов
-* [src/view.py](src/view.py) Содержит в себе консольное представление игры
-* [src/read_file.py](src/read_file.py) Класс, позволяющий выполнить чтение файла
-* [src/hangman_stages.py](src/hangman_stages.py) Файл, позволяющий получить состояния виселицы
-* [src/game_launcher.py](src/game_launcher.py) Содержит класс, позволяющий организовать игровой процесс
-* [src/game.py](src/game.py) Класс, содержащий логику игры
 
 ## Стек
 
