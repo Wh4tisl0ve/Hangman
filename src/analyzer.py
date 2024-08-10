@@ -9,4 +9,4 @@ class Analyzer:
         return self.__df_results.sort_values(by='date_game')[:5]
 
     def get_cnt_wins(self) -> pd.DataFrame:
-        return self.__df_results.groupby(by='game_result').agg('count')
+        return self.__df_results.groupby(by='game_result').agg('count')['hidden_word']
