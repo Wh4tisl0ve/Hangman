@@ -2,7 +2,7 @@ from typing import Dict, List
 
 
 def print_info_board(dict_info_game: Dict[str, List[str]]) -> None:
-    print(f'Загаданное слово({len(dict_info_game["hidden_word"])} букв): ', *dict_info_game["hidden_word"])
+    print(f'Загаданное слово({len(dict_info_game["masked_hidden_word"])} букв): ', *dict_info_game["masked_hidden_word"])
     print(f'Доступные буквы({len(dict_info_game["available_letters"])} букв): ', *dict_info_game["available_letters"])
     print(f'Использованные буквы({len(dict_info_game["used_letters"])} букв): ', *dict_info_game["used_letters"])
     print(f'Количество попыток: {dict_info_game["cnt_attempts"]}\n')
@@ -10,14 +10,14 @@ def print_info_board(dict_info_game: Dict[str, List[str]]) -> None:
 
 def show_menu() -> None:
     print('Меню')
-    items = ['Новая игра', 'Выход']
+    items = ['Новая игра', 'Мои результаты', 'Выход']
 
-    print('=' * (len(max(items)) + 3))
+    print('=' * (len(max(items, key=len)) + 3))
 
     for i, item in enumerate(items):
         print(f'{i + 1}. {item}')
 
-    print('=' * (len(max(items)) + 3))
+    print('=' * (len(max(items, key=len)) + 3))
 
 
 def show_win_message(hidden_word: str) -> None:

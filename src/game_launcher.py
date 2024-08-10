@@ -1,4 +1,6 @@
 from src import view
+from src.analyzer import Analyzer
+from src.file_handlers.read_word_file import TxtFileReader
 from src.file_handlers.write_game_result import TxtFileWriter
 from src.game_logic.game import HangmanGame
 from src.word_repository import WordRepository
@@ -19,6 +21,9 @@ class GameLauncher:
                 self.start_new_game()
                 self.run()
             case 2:
+                pd_results = TxtFileReader().read_game_results('game_result.txt')
+                print(Analyzer(pd_results).get_last_five_games())
+            case 3:
                 exit()
             case _:
                 view.show_incorrect_command_error()

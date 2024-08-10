@@ -4,9 +4,9 @@ from src.word_repository import WordRepository
 
 
 def main():
-    filename = 'src/data/russian_nouns.txt'
-    txt_reader = TxtFileReader(filename)
-    file = txt_reader.read_file()
+    filename = 'russian_nouns.txt'
+    txt_reader = TxtFileReader()
+    file = txt_reader.read_file(filename)
 
     word_repo = WordRepository(file)
     game_launcher = GameLauncher(word_repo)

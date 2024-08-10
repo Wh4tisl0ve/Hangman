@@ -56,7 +56,8 @@ class HangmanGame:
         return self.__hidden_word
 
     def get_info_game(self) -> Dict[str, List[str]]:
-        return {"hidden_word": self.__masked_hidden_word,
+        return {"hidden_word": self.__hidden_word,
+                "masked_hidden_word": self.__masked_hidden_word,
                 "available_letters": self.__available_letters,
                 "used_letters": self.__used_letters,
                 "game_result": self.check_state_game(),
