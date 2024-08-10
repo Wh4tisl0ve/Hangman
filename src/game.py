@@ -55,9 +55,11 @@ class HangmanGame:
         return self.__hidden_word
 
     def get_info_game(self) -> Dict[str, List[str]]:
-        return {"Загаданное слово": self.__masked_hidden_word,
-                "Доступные буквы": self.__available_letters,
-                "Использованные буквы": self.__used_letters}
+        return {"hidden_word": self.__masked_hidden_word,
+                "available_letters": self.__available_letters,
+                "used_letters": self.__used_letters,
+                "game_result": self.check_state_game(),
+                "cnt_attempts": self.__cnt_attempts}
 
     @staticmethod
     def is_correct_letter(letter: str) -> bool:

@@ -1,4 +1,5 @@
 from src import view
+from src.file_handlers.write_game_result import TxtFileWriter
 from src.game import HangmanGame
 from src.word_repository import WordRepository
 
@@ -28,7 +29,7 @@ class GameLauncher:
         game = HangmanGame(hidden_letter)
 
         while game.check_state_game() == 0:
-            view.print_info_board(game.get_info_game(), game.get_cnt_attempts())
+            view.print_info_board(game.get_info_game())
 
             input_letter = input('Введите букву -> ').lower()
             if game.is_correct_letter(input_letter):
@@ -36,6 +37,7 @@ class GameLauncher:
             else:
                 view.show_incorrect_letter_error()
 
+        TxtFileWriter(game).write_file()
         self.show_end_game_message(game)
 
     def show_end_game_message(self, game: HangmanGame) -> None:

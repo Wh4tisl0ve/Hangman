@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from src.game import HangmanGame
 
 
 class Writer(ABC):
@@ -8,6 +9,10 @@ class Writer(ABC):
 
 
 class TxtFileWriter(Writer):
-    def write_file(self):
-        with open('game_result.txt', 'w') as f:
-            f.write('Hello \n World')
+    def __init__(self, game: HangmanGame):
+        self.__current_game = game
+
+    def write_file(self) -> None:
+        filename = 'src/data/game_result.txt'
+        with open(filename, 'a') as f:
+            f.write(str(self.__current_game.get_info_game()) + "\n")

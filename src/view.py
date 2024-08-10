@@ -1,10 +1,11 @@
 from typing import Dict, List
 
 
-def print_info_board(dict_info_game: Dict[str, List[str]], cnt_attempts: int) -> None:
-    for key, value in dict_info_game.items():
-        print(f'{key}({len(value)} букв): ', *value)
-    print(f'Количество попыток: {cnt_attempts}\n')
+def print_info_board(dict_info_game: Dict[str, List[str]]) -> None:
+    print(f'Загаданное слово({len(dict_info_game["hidden_word"])} букв): ', *dict_info_game["hidden_word"])
+    print(f'Доступные буквы({len(dict_info_game["available_letters"])} букв): ', *dict_info_game["available_letters"])
+    print(f'Использованные буквы({len(dict_info_game["used_letters"])} букв): ', *dict_info_game["used_letters"])
+    print(f'Количество попыток: {dict_info_game["cnt_attempts"]}\n')
 
 
 def show_menu() -> None:
