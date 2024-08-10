@@ -1,0 +1,5 @@
+{'hidden_word': ['м', '_', '_', 'о', '_', 'а', 'г', 'о', 'т', 'о', '_', 'к', 'а'], 'available_letters': 'бвдёжзийсуфхцчщъыьэюя', 'used_letters': 'аентоглмпркш', 'game_result': -1, 'cnt_attempts': 0, 'date_game': '2024-08-10 19:13:42'}
+{'hidden_word': ['_', 'и', 'л', '_', 'т', 'к', 'а'], 'available_letters': 'бвгеёжзйсуфхцчшщъыьэюя', 'used_letters': 'таонклипдмр', 'game_result': -1, 'cnt_attempts': 0, 'date_game': '2024-08-10 19:14:07'}
+{'hidden_word': ['_', 'м', 'е', 'л', 'и', 'н', 'о', 'ч', 'к', 'а'], 'available_letters': 'бвгдёжзйсфхцщъыьэю', 'used_letters': 'артонекшлпмчуия', 'game_result': -1, 'cnt_attempts': 0, 'date_game': '2024-08-10 19:18:56'}
+{'hidden_word': ['р', 'и', '_', 'м', 'о', 'п', '_', '_', 'т', 'с', 'т', 'в', 'о'], 'available_letters': 'бгёжзйлфхцчшщъыьэюя', 'used_letters': 'еокпнрсатвимду', 'game_result': -1, 'cnt_attempts': 0, 'date_game': '2024-08-10 19:20:05'}
+{'hidden_word': ['с', 'и', 'м', 'в', 'о', 'л', 'и', 'с', 'т', 'к', 'а'], 'available_letters': 'бгдеёжзйпруфхцчшщъыьэюя', 'used_letters': 'оанствклим', 'game_result': 1, 'cnt_attempts': 5, 'date_game': '2024-08-10 19:20:45'}

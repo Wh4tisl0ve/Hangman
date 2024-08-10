@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from src.game import HangmanGame
+from src.game_logic.game import HangmanGame
 
 
 class Writer(ABC):

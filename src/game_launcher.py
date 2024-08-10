@@ -1,6 +1,6 @@
 from src import view
 from src.file_handlers.write_game_result import TxtFileWriter
-from src.game import HangmanGame
+from src.game_logic.game import HangmanGame
 from src.word_repository import WordRepository
 
 

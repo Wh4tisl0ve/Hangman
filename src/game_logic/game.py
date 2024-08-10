@@ -1,6 +1,6 @@
+from src.game_logic.hangman_stages import get_hangman_stage
 from typing import Dict, List
-
-from src.hangman_stages import get_hangman_stage
+import datetime
 
 
 class HangmanGame:
@@ -13,6 +13,7 @@ class HangmanGame:
 
         self.__cnt_attempts = 6
         self.__pointer_stages = -1
+        self.__date_game = datetime.datetime.now()
 
     def make_move(self, input_letter) -> None:
         if input_letter not in self.__used_letters:
@@ -59,7 +60,8 @@ class HangmanGame:
                 "available_letters": self.__available_letters,
                 "used_letters": self.__used_letters,
                 "game_result": self.check_state_game(),
-                "cnt_attempts": self.__cnt_attempts}
+                "cnt_attempts": self.__cnt_attempts,
+                "date_game": self.__date_game.strftime('%Y-%m-%d %H:%M:%S')}
 
     @staticmethod
     def is_correct_letter(letter: str) -> bool:
