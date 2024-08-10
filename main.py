@@ -1,5 +1,5 @@
 from src.game_launcher import GameLauncher
-from src.read_file import TxtFileReader
+from src.file_handlers.read_word_file import TxtFileReader
 from src.word_repository import WordRepository
 
 
