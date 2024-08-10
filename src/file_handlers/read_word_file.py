@@ -36,3 +36,4 @@ class TxtFileReader(Reader):
             self.__filename = input('Введите полный путь к файлу -> ')
 
         return self.read_file()
+
