@@ -1,4 +1,4 @@
-from src import view
+from src.views import view
 from src.analyzer import Analyzer
 from src.file_handlers.read_word_file import TxtFileReader
 from src.file_handlers.write_game_result import TxtFileWriter

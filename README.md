@@ -17,7 +17,7 @@
 * [main.py](main.py) Файл, позволяющий запустить игру
 * [src/data](src/data) Директория, содержащая в себе текстовый словарь слов существительных, используемых в игровом процессе
 * [src/word_repository.py](src/word_repository.py) Класс, позволяющий генерировать случайное слово на основе списка слов
-* [src/view.py](src/view.py) Содержит в себе консольное представление игры
+* [src/view.py](src/views/console_view.py) Содержит в себе консольное представление игры
 * [src/read_file.py](src/read_file.py) Класс, позволяющий выполнить чтение файла
 * [src/hangman_stages.py](src/game_logic/hangman_stages.py) Файл, позволяющий получить состояния виселицы
 * [src/game_launcher.py](src/game_launcher.py) Содержит класс, позволяющий организовать игровой процесс
