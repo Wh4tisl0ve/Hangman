@@ -19,11 +19,11 @@ class Analyzer:
         return len(self.__df_results[self.__df_results['game_result'] == 'Поражение'])
 
     def get_mean_cnt_attempts(self) -> float:
-        return self.__df_results['used_letters'].apply(lambda x: len(x)).mean()
+        return round(self.__df_results['used_letters'].apply(lambda x: len(x)).mean())
 
     def get_mean_len_word(self):
-        return self.__df_results[self.__df_results['game_result'] == 'Победа']['hidden_word'].apply(
-            lambda x: len(x)).mean()
+        return round(self.__df_results[self.__df_results['game_result'] == 'Победа']['hidden_word'].apply(
+            lambda x: len(x)).mean(), 1)
 
     def get_most_common_letter(self) -> str:
         letters = self.__df_results['used_letters'].str.cat()
