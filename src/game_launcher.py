@@ -15,7 +15,7 @@ class GameLauncher:
         user_cmd = self.input_cmd_menu()
         self.select_item_menu(user_cmd)
 
-    def display_statistics(self):
+    def display_statistics(self) -> None:
         try:
             pd_results = TxtFileReader().read_game_results('game_result.txt')
             view.show_game_results(Analyzer(pd_results).get_game_results())
