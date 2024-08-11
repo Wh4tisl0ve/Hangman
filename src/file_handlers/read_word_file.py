@@ -21,6 +21,7 @@ class TxtFileReader(Reader):
                 return file.readlines()
         except FileNotFoundError as file_ex:
             print(f'Файл не найден: {file_ex}\n')
+            exit()
         except Exception as ex:
             print(f'Произошла ошибка: {ex}\n')
 

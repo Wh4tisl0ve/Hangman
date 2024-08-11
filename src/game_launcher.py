@@ -22,7 +22,8 @@ class GameLauncher:
                 self.run()
             case 2:
                 pd_results = TxtFileReader().read_game_results('game_result.txt')
-                print(Analyzer(pd_results).get_last_five_games())
+                view.show_game_results(Analyzer(pd_results).get_game_results())
+                self.run()
             case 3:
                 exit()
             case _:
