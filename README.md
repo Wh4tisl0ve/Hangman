@@ -6,8 +6,7 @@
 неправильный ответ добавляется одна часть туловища к виселице. Игрок имеет 6 попыток.
 Если туловище в виселице нарисовано полностью, то игрок проиграл. Если игроку удаётся угадать слово, он выигрывает.
 
-Проект создан в рамках **Python Roadmap Сергея Жукова
-** -> [ссылка](https://zhukovsd.github.io/python-backend-learning-course/)
+Проект создан в рамках **Python Roadmap Сергея Жукова** -> [ссылка](https://zhukovsd.github.io/python-backend-learning-course/)
 
 
 <p align="center">
