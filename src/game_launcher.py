@@ -15,14 +15,20 @@ class GameLauncher:
         user_cmd = self.input_cmd_menu()
         self.select_item_menu(user_cmd)
 
+    def display_statistics(self):
+        try:
+            pd_results = TxtFileReader().read_game_results('game_result.txt')
+            view.show_game_results(Analyzer(pd_results).get_game_results())
+        except Exception as ex:
+            pass
+
     def select_item_menu(self, cmd) -> None:
         match cmd:
             case 1:
                 self.start_new_game()
                 self.run()
             case 2:
-                pd_results = TxtFileReader().read_game_results('game_result.txt')
-                view.show_game_results(Analyzer(pd_results).get_game_results())
+                self.display_statistics()
                 self.run()
             case 3:
                 exit()

@@ -19,8 +19,8 @@ class TxtFileReader(Reader):
         try:
             with open(f'{self.__path}/{filename}', 'r', encoding='UTF-8') as file:
                 return file.readlines()
-        except FileNotFoundError as file_ex:
-            print(f'Файл не найден: {file_ex}\n')
+        except FileNotFoundError:
+            print(f'Не найден файл со словами\n')
             exit()
         except Exception as ex:
             print(f'Произошла ошибка: {ex}\n')
@@ -29,7 +29,7 @@ class TxtFileReader(Reader):
         try:
             with open(f'{self.__path}/{filename}', 'r', encoding='UTF-8') as file:
                 return pd.DataFrame([eval(line.rstrip()) for line in file])
-        except FileNotFoundError as file_ex:
-            print(f'Файл не найден: {file_ex}\n')
+        except FileNotFoundError:
+            print(f'Не найден файл с результатами\n')
         except Exception as ex:
             print(f'Произошла ошибка: {ex}\n')

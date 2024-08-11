@@ -43,8 +43,12 @@ def show_game_results(dict_game_results: Dict) -> None:
     print(f'''
         Статистика по играм:
 -------------------------------------
+|Всего игр: {dict_game_results['all_game']}
 |Побед: {dict_game_results['cnt_win']}
 |Поражений: {dict_game_results['cnt_loose']}
+|Процент побед: {(dict_game_results['cnt_win'] / dict_game_results['all_game']) * 100}%
 =====================================
 |Среднее количество попыток: {dict_game_results['mean_attempts']}
+|Средняя длина угаданного слова: {dict_game_results['mean_len_word']}
+|Наиболее часто используемая буква: {dict_game_results['most_common_letter']}
 -------------------------------------\n''')
